@@ -1,0 +1,21 @@
+class GenericClass<T> {
+    T value;
+
+    GenericClass(T value) {
+        this.value = value;
+    }
+    void display() {
+        System.out.println("Stored value: " + value);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+   
+        GenericClass<Integer> Obj = new GenericClass<>(100);   //for integer
+        Obj.display();  
+
+        GenericClass<String> Obj1 = new GenericClass<>("Hello Java");  // for string
+        Obj1.display();
+    }
+}
