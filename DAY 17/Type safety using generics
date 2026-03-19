@@ -1,0 +1,29 @@
+WITH GENERICS
+import java.util.ArrayList;
+
+class Demo {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Java");
+        // list.add(10); // Only specified type is allowed
+
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
+}
+
+
+WITHOUT GENERICS
+
+class Demo {
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList(); //Can store any type , Needs type casting
+
+        list.add(10);
+        list.add("Hello"); // allowed
+
+        int num = (int) list.get(0); // type casting needed
+    }
+}
