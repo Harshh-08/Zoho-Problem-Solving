@@ -1,0 +1,11 @@
+class GenericMethod {
+    public static <T> void printValue(T value) {
+        System.out.println(value);
+    }
+
+    public static void main(String[] args) {
+        printValue(1);
+        printValue("Java");
+        printValue(7.9);
+    }
+}
