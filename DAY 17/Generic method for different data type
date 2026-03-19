@@ -1,0 +1,11 @@
+class GenericMethodDemo {
+    public static <T> void printData(T data) {
+        System.out.println(data);
+    }
+
+    public static void main(String[] args) {
+        printData(10);
+        printData("Hello");
+        printData(5.5);
+    }
+}
