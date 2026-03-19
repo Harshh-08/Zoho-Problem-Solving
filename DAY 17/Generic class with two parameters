@@ -1,0 +1,20 @@
+class Generic<T, U> {
+    T data;
+    U data1;
+
+    TwoGeneric(T data, U data1) {
+        this.data = data;
+        this.data1 = data1;
+    }
+
+    void display() {
+        System.out.println(data + " " + data1);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Generic<Integer, String> obj = new Generic<>(1, "Java");
+        obj.display();
+    }
+}
